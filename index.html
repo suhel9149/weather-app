@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Weather App</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link rel="stylesheet" href="style.css"> 
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <main class="container">
+            <input list="cities" type="search" name="search" id="search" placeholder="Search city" autocomplete="off">
+
+            <datalist id="cities">
+                    <!-- <option value="pune"></option> -->
+                    <!-- <option value="delhi"></option> -->
+
+            </datalist>
+
+            <article id="current-forecast">
+                <h1 class="city">City Name</h1>
+                <p class="temp">--</p>
+                <p class="description">Description</p>
+                <p class="min-max-temp">High Low </p>
+            </article>
+            <article id="hourly-forecast">
+                <h1>Hourly Forecast</h1>
+                <section class="hourly-container">
+                    <article>
+                        <h3 class="time">Now</h3>
+                        <p class="icon"></p>
+                        <p class="hourly-temp">--</p>
+                    </article>
+                </section>
+            </article>
+            <article id="five-day-forecast">
+                <h1>5 day Forecast</h1>
+                <section class="five-day-forecast-container">
+                    <article class="day-wise-forecast">
+                        <h3>Today</h3>
+                        <p class="icon">--</p>
+                        <p class="min-temp">--</p>
+                        <p class="max-temp">--</p>
+                    </article>
+                    <article class="day-wise-forecast">
+                        <h3>Wed</h3>
+                        <p class="icon">--</p>
+                        <p class="min-temp">--</p>
+                        <p class="max-temp">--</p>
+                    </article>
+                </section>
+            </article>
+            <article id="feels-like">
+                <h1>Feels </h1>
+                <p class="feels-like-temp">--</p>
+            </article>
+            <article id="humidity">
+                <h1>Humidity</h1>
+                <p class="humidity-value">--</p>
+            </article>
+        </main>
+        
+        <script src="./main.js" async defer></script>
+    </body>
+</html>
